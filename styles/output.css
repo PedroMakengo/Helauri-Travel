@@ -315,8 +315,14 @@
   .h-150 {
     height: calc(var(--spacing) * 150);
   }
+  .h-160 {
+    height: calc(var(--spacing) * 160);
+  }
   .h-170 {
     height: calc(var(--spacing) * 170);
+  }
+  .h-250 {
+    height: calc(var(--spacing) * 250);
   }
   .h-full {
     height: 100%;
