@@ -22,6 +22,19 @@
   animation: float 4s ease-in-out infinite;
 }
 
+@keyframes scrollVertical {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.scroll-vertical {
+  animation: scrollVertical 30s linear infinite;
+}
+
 html {
   scroll-behavior: smooth;
 }
