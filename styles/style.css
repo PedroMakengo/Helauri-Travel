@@ -23,16 +23,19 @@
 }
 
 @keyframes scrollVertical {
-  0% {
-    transform: translateY(0);
+  from {
+    transform: translateY(calc(-100% + 100vh));
   }
-  100% {
-    transform: translateY(-50%);
+
+  /* End position: shift entire column down, but not so that it goes out of view */
+  to {
+    transform: translateY(calc(100% - 100vh));
   }
 }
 
 .scroll-vertical {
-  animation: scrollVertical 30s linear infinite;
+  animation: scrollVertical 30s linear forward;
+  animation-timeline: scroll(root block);
 }
 
 html {
