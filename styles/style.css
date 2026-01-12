@@ -22,20 +22,21 @@
   animation: float 4s ease-in-out infinite;
 }
 
-@keyframes scrollVertical {
-  from {
-    transform: translateY(calc(-100% + 100vh));
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
   }
-
-  /* End position: shift entire column down, but not so that it goes out of view */
-  to {
-    transform: translateY(calc(100% - 100vh));
+  100% {
+    transform: translateY(-50%);
   }
 }
 
-.scroll-vertical {
-  animation: scrollVertical 30s linear forward;
-  animation-timeline: scroll(root block);
+.animate-scroll-up {
+  animation: scrollUp 20s linear infinite;
+}
+
+.scroll-container:hover .animate-scroll-up {
+  animation-play-state: paused;
 }
 
 html {
