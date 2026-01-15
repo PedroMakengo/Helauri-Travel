@@ -18,34 +18,44 @@
     <link href="./styles/output.css" rel="stylesheet" />
   </head>
   <body class="bg-gray-100 scroll-smooth">
-    <header class="bg-white">
-      <div class="mx-auto w-6xl flex items-center justify-between">
-        <a href="#" class="">
+    <header class="bg-white px-4 py-4 md:px-6 lg:px-8">
+      <div
+        class="mx-auto max-w-7xl flex flex-col md:flex-row items-center justify-between gap-4"
+      >
+        <a href="#" class="shrink-0">
           <img
             src="./public/assets/logo-sem-fundo.png"
             alt=""
-            class="w-25 h-25"
+            class="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28"
           />
         </a>
-        <nav>
-          <ul class="flex gap-8">
+        <nav class="w-full md:w-auto">
+          <ul class="flex flex-wrap justify-center gap-4 md:gap-6 lg:gap-8">
             <li>
-              <a href="#" class="text-gray-500 hover:text-gray-900 duration-150"
+              <a
+                href="#"
+                class="text-sm md:text-base text-gray-500 hover:text-gray-900 duration-150"
                 >Quem Somos</a
               >
             </li>
             <li>
-              <a href="#" class="text-gray-500 hover:text-gray-900 duration-150"
+              <a
+                href="#"
+                class="text-sm md:text-base text-gray-500 hover:text-gray-900 duration-150"
                 >Serviços</a
               >
             </li>
             <li>
-              <a href="#" class="text-gray-500 hover:text-gray-900 duration-150"
+              <a
+                href="#"
+                class="text-sm md:text-base text-gray-500 hover:text-gray-900 duration-150"
                 >Destinos</a
               >
             </li>
             <li>
-              <a href="#" class="text-gray-500 hover:text-gray-900 duration-150"
+              <a
+                href="#"
+                class="text-sm md:text-base text-gray-500 hover:text-gray-900 duration-150"
                 >Depoimentos</a
               >
             </li>
@@ -53,13 +63,13 @@
         </nav>
         <a
           href="#"
-          class="bg-amber-600 text-white px-6 py-3 shadow-md rounded-md"
+          class="bg-amber-600 text-white px-4 py-2 md:px-6 md:py-3 shadow-md rounded-md text-sm md:text-base whitespace-nowrap"
           >Fale Connosco
         </a>
       </div>
     </header>
 
-    <section class="relative h-170 w-full overflow-hidden">
+    <section class="relative h-screen min-h-96 w-full overflow-hidden">
       <!-- Vídeo de fundo -->
       <video
         autoplay
@@ -77,26 +87,28 @@
 
       <!-- Conteúdo -->
       <div
-        class="relative z-10 flex flex-col justify-center h-full mx-auto w-6xl"
+        class="relative z-10 flex flex-col justify-center h-full mx-auto max-w-7xl px-4 md:px-6 lg:px-8"
       >
         <h1
-          class="text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in w-3xl"
+          class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 animate-fade-in max-w-4xl"
         >
           Viajar é viver novas histórias. Nós levamos você até elas.
         </h1>
-        <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl">
+        <p
+          class="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 mb-6 md:mb-8 max-w-2xl"
+        >
           Consultória personalizada para transformar seus sonhos em roteiros
           perfeitos e inesquecíveis.
         </p>
-        <div class="flex flex-col sm:flex-row gap-4">
+        <div class="flex flex-col sm:flex-row gap-3 md:gap-4">
           <button
-            class="px-6 py-4 bg-amber-500 text-white font-semibold rounded-lg hover:bg-blue-500 transition-all transform hover:scale-105"
+            class="px-5 py-3 md:px-6 md:py-4 bg-amber-500 text-white text-sm md:text-base font-semibold rounded-lg hover:bg-blue-500 transition-all transform hover:scale-105"
           >
             <i class=""></i>
             Planeje sua viagem
           </button>
           <button
-            class="px-6 py-4 bg-transparent text-white font-semibold border-2 border-white rounded-lg hover:bg-white hover:text-gray-900 transition-all"
+            class="px-5 py-3 md:px-6 md:py-4 bg-transparent text-white text-sm md:text-base font-semibold border-2 border-white rounded-lg hover:bg-white hover:text-gray-900 transition-all"
           >
             Ver destinos
           </button>
@@ -104,10 +116,12 @@
       </div>
 
       <!-- Indicador de scroll -->
-      <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
+      <div
+        class="absolute bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2 z-10"
+      >
         <div class="animate-bounce">
           <svg
-            class="w-6 h-6 text-white"
+            class="w-5 h-5 md:w-6 md:h-6 text-white"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -124,62 +138,74 @@
     </section>
 
     <main>
-      <section class="py-16">
-        <div class="mx-auto w-6xl flex flex-col gap-8">
-          <div class="flex flex-col gap-3">
-            <span class="uppercase text-amber-500 font-semibold text-md"
+      <section class="py-12 md:py-16 lg:py-20 px-4 md:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl flex flex-col gap-6 md:gap-8 lg:gap-10">
+          <div class="flex flex-col gap-2 md:gap-3">
+            <span
+              class="uppercase text-amber-500 font-semibold text-sm md:text-base"
               >Quem Somos</span
             >
-            <h2 class="text-2xl font-bold uppercase">
+            <h2 class="text-xl md:text-2xl lg:text-3xl font-bold uppercase">
               Sua parceira de confiança pelo mundo
             </h2>
-            <p class="w-2xl text-md text-gray-500">
+            <p class="max-w-3xl text-sm md:text-base text-gray-500">
               Nossa missão é transformar sonhos em roteiros perfeitos, com
               segurança e dedicação total. Cuidamos de cada detalhe para que sua
               única preocupação seja aproveitar.
             </p>
           </div>
 
-          <div class="grid grid-cols-3 gap-6">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6"
+          >
             <div
-              class="flex flex-col gap-3 bg-white border border-gray-200 p-6 rounded-md"
+              class="flex flex-col gap-3 bg-white border border-gray-200 p-5 md:p-6 rounded-md hover:shadow-lg transition-shadow"
             >
               <div
-                class="w-10 h-10 bg-amber-500/30 rounded-md flex items-center justify-center"
+                class="w-10 h-10 md:w-12 md:h-12 bg-amber-500/30 rounded-md flex items-center justify-center"
               >
-                <i data-lucide="scroll" class="text-amber-500 h-5 w-5"></i>
+                <i
+                  data-lucide="scroll"
+                  class="text-amber-500 h-5 w-5 md:h-6 md:w-6"
+                ></i>
               </div>
-              <h3 class="text-xl font-bold">Experiência</h3>
-              <p class="text-sm text-gray-500">
+              <h3 class="text-lg md:text-xl font-bold">Experiência</h3>
+              <p class="text-sm md:text-base text-gray-500">
                 Anos de mercado criando memórias e explorando os melhores
                 destinos do mundo para você.
               </p>
             </div>
             <div
-              class="flex flex-col gap-3 bg-white border border-gray-200 p-6 rounded-md"
+              class="flex flex-col gap-3 bg-white border border-gray-200 p-5 md:p-6 rounded-md hover:shadow-lg transition-shadow"
             >
               <div
-                class="w-10 h-10 bg-amber-500/30 rounded-md flex items-center justify-center"
+                class="w-10 h-10 md:w-12 md:h-12 bg-amber-500/30 rounded-md flex items-center justify-center"
               >
-                <i data-lucide="user" class="text-amber-500 h-5 w-5"></i>
+                <i
+                  data-lucide="user"
+                  class="text-amber-500 h-5 w-5 md:h-6 md:w-6"
+                ></i>
               </div>
-              <h3 class="text-xl font-bold">Atendimento Humano</h3>
-              <p class="text-sm text-gray-500">
-                Consultores reais apaixonados popr viagens, prontos para ouvir
+              <h3 class="text-lg md:text-xl font-bold">Atendimento Humano</h3>
+              <p class="text-sm md:text-base text-gray-500">
+                Consultores reais apaixonados por viagens, prontos para ouvir
                 você, sem robôs.
               </p>
             </div>
             <div
-              class="flex flex-col gap-3 bg-white border border-gray-200 p-6 rounded-md"
+              class="flex flex-col gap-3 bg-white border border-gray-200 p-5 md:p-6 rounded-md hover:shadow-lg transition-shadow md:col-span-2 lg:col-span-1"
             >
               <div
-                class="w-10 h-10 bg-amber-500/30 rounded-md flex items-center justify-center"
+                class="w-10 h-10 md:w-12 md:h-12 bg-amber-500/30 rounded-md flex items-center justify-center"
               >
-                <i data-lucide="handshake" class="text-amber-500 h-5 w-5"></i>
+                <i
+                  data-lucide="handshake"
+                  class="text-amber-500 h-5 w-5 md:h-6 md:w-6"
+                ></i>
               </div>
-              <h3 class="text-xl font-bold">Parceiras Exclusivas</h3>
-              <p class="text-sm text-gray-500">
-                Acesso à melhores companhias aéreas e hotéis com condições
+              <h3 class="text-lg md:text-xl font-bold">Parceiras Exclusivas</h3>
+              <p class="text-sm md:text-base text-gray-500">
+                Acesso às melhores companhias aéreas e hotéis com condições
                 especiais.
               </p>
             </div>
@@ -187,140 +213,183 @@
         </div>
       </section>
 
-      <section class="py-16 bg-white">
-        <div class="mx-auto w-6xl flex flex-col gap-8">
+      <section class="py-12 md:py-16 lg:py-20 bg-white px-4 md:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl flex flex-col gap-6 md:gap-8 lg:gap-10">
           <div
-            class="flex flex-col gap-3 justify-center items-center text-center"
+            class="flex flex-col gap-2 md:gap-3 justify-center items-center text-center"
           >
-            <span class="uppercase text-amber-500 font-semibold text-md"
+            <span
+              class="uppercase text-amber-500 font-semibold text-sm md:text-base"
               >O que oferecemos</span
             >
-            <h2 class="text-2xl font-bold uppercase">
+            <h2 class="text-xl md:text-2xl lg:text-3xl font-bold uppercase">
               Serviços Completos para sua viagem
             </h2>
           </div>
 
-          <div class="grid grid-cols-3 gap-6 mt-8">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mt-4 md:mt-6 lg:mt-8"
+          >
+            <!-- Pacotes de viagem -->
             <div
-              class="bg-gray-100 rounded-md border border-gray-200 flex flex-col"
+              class="bg-gray-50 rounded-lg md:rounded-xl border border-gray-200 flex flex-col hover:shadow-lg transition-shadow"
             >
               <div
-                class="object-cover bg-center bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuA_YZEVMw-hz9-lC_ke9UfgZgAuwSiJGuWU3NppSmF1s4HbOB1xcr2q_t0DPAjlqFUUmHk0T1s3GnrkP34TLO5biqgjaqgbm2IOkahb1pDZmi1nxtlknx0p3I4_aXH9V4Mw9QGMkYdtLVmUGRxDj8h_m8eDXYVojNz1U0KGaKPPiyy7cBGIZpDHkkMinE5x-_Qswvtarn32eAcJOeXxoH6mbaq0AzADUC7xGTmQ-cinjrmOsoca3PawAaIBjYcVWfD95_DWsO6K65Oe')] h-50 rounded-tl-md rounded-tr-md p-4"
+                class="object-cover bg-center bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuA_YZEVMw-hz9-lC_ke9UfgZgAuwSiJGuWU3NppSmF1s4HbOB1xcr2q_t0DPAjlqFUUmHk0T1s3GnrkP34TLO5biqgjaqgbm2IOkahb1pDZmi1nxtlknx0p3I4_aXH9V4Mw9QGMkYdtLVmUGRxDj8h_m8eDXYVojNz1U0KGaKPPiyy7cBGIZpDHkkMinE5x-_Qswvtarn32eAcJOeXxoH6mbaq0AzADUC7xGTmQ-cinjrmOsoca3PawAaIBjYcVWfD95_DWsO6K65Oe')] h-40 md:h-48 lg:h-52 rounded-t-lg md:rounded-t-xl p-3 md:p-4"
               >
                 <div
-                  class="w-10 h-10 bg-white shadow-md rounded-md flex items-center justify-center"
+                  class="w-10 h-10 md:w-12 md:h-12 bg-white shadow-md rounded-md md:rounded-lg flex items-center justify-center"
                 >
                   <i
                     data-lucide="tickets-plane"
-                    class="text-amber-500 h-5 w-5"
+                    class="text-amber-500 w-5 h-5 md:w-6 md:h-6"
                   ></i>
                 </div>
               </div>
-              <div class="flex flex-col px-4 py-8 gap-2">
-                <h4 class="font-bold">Pacotes de viagem</h4>
-                <p class="text-sm text-gray-500">
+              <div
+                class="flex flex-col px-4 md:px-5 py-5 md:py-6 lg:py-8 gap-2"
+              >
+                <h4 class="font-bold text-base md:text-lg">
+                  Pacotes de viagem
+                </h4>
+                <p class="text-sm md:text-base text-gray-500">
                   Roteiros nacionais e internacionais completos, personalizados
                   para você não se preocupar com nada além de curtir.
                 </p>
               </div>
             </div>
+
+            <!-- Passagens Aéreas -->
             <div
-              class="bg-gray-100 rounded-md border border-gray-200 flex flex-col"
+              class="bg-gray-50 rounded-lg md:rounded-xl border border-gray-200 flex flex-col hover:shadow-lg transition-shadow"
             >
               <div
-                class="object-cover bg-center bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuBGz1-Q4IOKuLUkFajzR_xr-7jIO2-APvS7ZuIjlctumsRRNm_ZNacdJItmF-LGtnLGN48XkeQ9NWHvHbCQrrwfZIuPw3Ax4kU54mez-tnFOy8OUOqj_KpJaiGibs5jB7gAMm98A0D8dNISNP75x1AJhngIZLOpW3MArcEgd1pAaiq3suYkHkNS30piQb_YTFaBElKku5-AQjzxZs6OBUVu3CK5oAWcvvKWipqmx2H6HamdgUjtRHQf1oXyAsjp7PaGWT_82oJ8QrFm')] h-50 rounded-tl-md rounded-tr-md p-4"
+                class="object-cover bg-center bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuBGz1-Q4IOKuLUkFajzR_xr-7jIO2-APvS7ZuIjlctumsRRNm_ZNacdJItmF-LGtnLGN48XkeQ9NWHvHbCQrrwfZIuPw3Ax4kU54mez-tnFOy8OUOqj_KpJaiGibs5jB7gAMm98A0D8dNISNP75x1AJhngIZLOpW3MArcEgd1pAaiq3suYkHkNS30piQb_YTFaBElKku5-AQjzxZs6OBUVu3CK5oAWcvvKWipqmx2H6HamdgUjtRHQf1oXyAsjp7PaGWT_82oJ8QrFm')] h-40 md:h-48 lg:h-52 rounded-t-lg md:rounded-t-xl p-3 md:p-4"
               >
                 <div
-                  class="w-10 h-10 bg-white shadow-md rounded-md flex items-center justify-center"
+                  class="w-10 h-10 md:w-12 md:h-12 bg-white shadow-md rounded-md md:rounded-lg flex items-center justify-center"
                 >
-                  <i data-lucide="plane" class="text-amber-500 h-5 w-5"></i>
+                  <i
+                    data-lucide="plane"
+                    class="text-amber-500 w-5 h-5 md:w-6 md:h-6"
+                  ></i>
                 </div>
               </div>
-              <div class="flex flex-col px-4 py-8 gap-2">
-                <h4 class="font-bold">Passagem Aéreas</h4>
-                <p class="text-sm text-gray-500">
-                  Roteiros nacionais e internacionais completos, personalizados
-                  para você não se preocupar com nada além de curtir.
+              <div
+                class="flex flex-col px-4 md:px-5 py-5 md:py-6 lg:py-8 gap-2"
+              >
+                <h4 class="font-bold text-base md:text-lg">Passagens Aéreas</h4>
+                <p class="text-sm md:text-base text-gray-500">
+                  Acesso às melhores tarifas e rotas, com atendimento
+                  personalizado para encontrar a opção ideal para você.
                 </p>
               </div>
             </div>
+
+            <!-- Hospedagem -->
             <div
-              class="bg-gray-100 rounded-md border border-gray-200 flex flex-col"
+              class="bg-gray-50 rounded-lg md:rounded-xl border border-gray-200 flex flex-col hover:shadow-lg transition-shadow"
             >
               <div
-                class="object-cover bg-center bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuBUlMXxbx7vhfHpTTsgxPpFxIQV-iLmecSnc5x4f33JcDIXNAHWQmBkdYo1a2o5YxW-cbVQCZv5UyqVXl4BDREg-9NDJ5dAiw_YLiIYMIWQtGO69WPYF36-6UWSwN8lTlCleM64Q-RiolHOh3T3rtNcYIQWTA2mcK7qv4378AAH-AzFfY0wznt_lUJgciD2DJN4K34O3LZoJQWgKTAR7_roEApA4nAfkrV7wJNvvVvpNR-MZmq02LoCD1xfwxR5nX5US6GAZG9tbavu')] h-50 rounded-tl-md rounded-tr-md p-4"
+                class="object-cover bg-center bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuBUlMXxbx7vhfHpTTsgxPpFxIQV-iLmecSnc5x4f33JcDIXNAHWQmBkdYo1a2o5YxW-cbVQCZv5UyqVXl4BDREg-9NDJ5dAiw_YLiIYMIWQtGO69WPYF36-6UWSwN8lTlCleM64Q-RiolHOh3T3rtNcYIQWTA2mcK7qv4378AAH-AzFfY0wznt_lUJgciD2DJN4K34O3LZoJQWgKTAR7_roEApA4nAfkrV7wJNvvVvpNR-MZmq02LoCD1xfwxR5nX5US6GAZG9tbavu')] h-40 md:h-48 lg:h-52 rounded-t-lg md:rounded-t-xl p-3 md:p-4"
               >
                 <div
-                  class="w-10 h-10 bg-white shadow-md rounded-md flex items-center justify-center"
+                  class="w-10 h-10 md:w-12 md:h-12 bg-white shadow-md rounded-md md:rounded-lg flex items-center justify-center"
                 >
-                  <i data-lucide="bed" class="text-amber-500 h-5 w-5"></i>
+                  <i
+                    data-lucide="bed"
+                    class="text-amber-500 w-5 h-5 md:w-6 md:h-6"
+                  ></i>
                 </div>
               </div>
-              <div class="flex flex-col px-4 py-8 gap-2">
-                <h4 class="font-bold">Hospedagem</h4>
-                <p class="text-sm text-gray-500">
-                  Roteiros nacionais e internacionais completos, personalizados
-                  para você não se preocupar com nada além de curtir.
+              <div
+                class="flex flex-col px-4 md:px-5 py-5 md:py-6 lg:py-8 gap-2"
+              >
+                <h4 class="font-bold text-base md:text-lg">Hospedagem</h4>
+                <p class="text-sm md:text-base text-gray-500">
+                  Seleção criteriosa de hotéis, resorts e pousadas que combinam
+                  conforto, localização e excelente custo-benefício.
                 </p>
               </div>
             </div>
+
+            <!-- Lua de Mel -->
             <div
-              class="bg-gray-100 rounded-md border border-gray-200 flex flex-col"
+              class="bg-gray-50 rounded-lg md:rounded-xl border border-gray-200 flex flex-col hover:shadow-lg transition-shadow"
             >
               <div
-                class="object-cover bg-center bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuDnauBcr0bH8ZsTO4aiGGjGxwd4mywVnZnxRZFXRRhhd9PmHZoAWNMU3CaH_s2bwEmG0H7eLbP1tXW_gnrHFNFNYsoqTneB8yarhaOyfdA5hZS6Z61Zsl_YB7EVyiEDwmPNURgBOzckRKDTBp9OKOKIJcGdn00IjP_WSfJe1ysMfOu5fiVsKpOyVMifbAiT90xrhPWuFfZkkLH8xwl5ygC0PZclDlo_ZcCG-pgDol4F1FJJHvU4__QDKCNJVs_lRbIdRv_1OwCYhS17')] h-50 rounded-tl-md rounded-tr-md p-4"
+                class="object-cover bg-center bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuDnauBcr0bH8ZsTO4aiGGjGxwd4mywVnZnxRZFXRRhhd9PmHZoAWNMU3CaH_s2bwEmG0H7eLbP1tXW_gnrHFNFNYsoqTneB8yarhaOyfdA5hZS6Z61Zsl_YB7EVyiEDwmPNURgBOzckRKDTBp9OKOKIJcGdn00IjP_WSfJe1ysMfOu5fiVsKpOyVMifbAiT90xrhPWuFfZkkLH8xwl5ygC0PZclDlo_ZcCG-pgDol4F1FJJHvU4__QDKCNJVs_lRbIdRv_1OwCYhS17')] h-40 md:h-48 lg:h-52 rounded-t-lg md:rounded-t-xl p-3 md:p-4"
               >
                 <div
-                  class="w-10 h-10 bg-white shadow-md rounded-md flex items-center justify-center"
+                  class="w-10 h-10 md:w-12 md:h-12 bg-white shadow-md rounded-md md:rounded-lg flex items-center justify-center"
                 >
-                  <i data-lucide="heart" class="text-amber-500 h-5 w-5"></i>
+                  <i
+                    data-lucide="heart"
+                    class="text-amber-500 w-5 h-5 md:w-6 md:h-6"
+                  ></i>
                 </div>
               </div>
-              <div class="flex flex-col px-4 py-8 gap-2">
-                <h4 class="font-bold">Lua de Mel</h4>
-                <p class="text-sm text-gray-500">
-                  Roteiros nacionais e internacionais completos, personalizados
-                  para você não se preocupar com nada além de curtir.
+              <div
+                class="flex flex-col px-4 md:px-5 py-5 md:py-6 lg:py-8 gap-2"
+              >
+                <h4 class="font-bold text-base md:text-lg">Lua de Mel</h4>
+                <p class="text-sm md:text-base text-gray-500">
+                  Experiências românticas e inesquecíveis em destinos
+                  paradisíacos, com mimos especiais para celebrar seu amor.
                 </p>
               </div>
             </div>
+
+            <!-- Corporativo -->
             <div
-              class="bg-gray-100 rounded-md border border-gray-200 flex flex-col"
+              class="bg-gray-50 rounded-lg md:rounded-xl border border-gray-200 flex flex-col hover:shadow-lg transition-shadow"
             >
               <div
-                class="object-cover bg-center bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuABLzh9Xg3wp1nB8PqF0UxzPm85gpycdAO6yO1TfZ53XuwJx7Yf6cnFai2eEo6UBN4noGw8488740xgG_03NraH6WwtigxIbIv7GX86p2ZH5mRLqU59VNBdFQkrXXHomjvfVuE0gaGR3_Vo6E-_v-O-4ojS-d1vGqYK0FlPk-mp96QblRb0Jn5acSYYlKi0RaVWfMuA3ygCSwyuuoz6GQnYzYLFP9tPyTUf7fyTlWcjqCNa24cDcFSdtsQB7tb64X-x0lEBh9Bq1w1s')] h-50 rounded-tl-md rounded-tr-md p-4"
+                class="object-cover bg-center bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuABLzh9Xg3wp1nB8PqF0UxzPm85gpycdAO6yO1TfZ53XuwJx7Yf6cnFai2eEo6UBN4noGw8488740xgG_03NraH6WwtigxIbIv7GX86p2ZH5mRLqU59VNBdFQkrXXHomjvfVuE0gaGR3_Vo6E-_v-O-4ojS-d1vGqYK0FlPk-mp96QblRb0Jn5acSYYlKi0RaVWfMuA3ygCSwyuuoz6GQnYzYLFP9tPyTUf7fyTlWcjqCNa24cDcFSdtsQB7tb64X-x0lEBh9Bq1w1s')] h-40 md:h-48 lg:h-52 rounded-t-lg md:rounded-t-xl p-3 md:p-4"
               >
                 <div
-                  class="w-10 h-10 bg-white shadow-md rounded-md flex items-center justify-center"
+                  class="w-10 h-10 md:w-12 md:h-12 bg-white shadow-md rounded-md md:rounded-lg flex items-center justify-center"
                 >
-                  <i data-lucide="luggage" class="text-amber-500 h-5 w-5"></i>
+                  <i
+                    data-lucide="luggage"
+                    class="text-amber-500 w-5 h-5 md:w-6 md:h-6"
+                  ></i>
                 </div>
               </div>
-              <div class="flex flex-col px-4 py-8 gap-2">
-                <h4 class="font-bold">Corporativo</h4>
-                <p class="text-sm text-gray-500">
-                  Roteiros nacionais e internacionais completos, personalizados
-                  para você não se preocupar com nada além de curtir.
+              <div
+                class="flex flex-col px-4 md:px-5 py-5 md:py-6 lg:py-8 gap-2"
+              >
+                <h4 class="font-bold text-base md:text-lg">Corporativo</h4>
+                <p class="text-sm md:text-base text-gray-500">
+                  Soluções eficientes para viagens de negócios, eventos e
+                  incentivos, garantindo produtividade e economia.
                 </p>
               </div>
             </div>
+
+            <!-- Consultoria -->
             <div
-              class="bg-gray-100 rounded-md border border-gray-200 flex flex-col"
+              class="bg-gray-50 rounded-lg md:rounded-xl border border-gray-200 flex flex-col hover:shadow-lg transition-shadow"
             >
               <div
-                class="object-cover bg-center bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuD_iY4xAuTFr5FvQhKZylBya4Q7hz2LNoirmTmG1vR1_6qvzsuz1j4aqRcbneTIQuGgA4qcV-H0hgR7QeXAP4uqRISsq3YrdWgq_EqyQVg_cA9ip23ajyY5llnu4GJgk_TkXsBjbfqMUh5C8EtV-kSc6KevddYcerqDNqNZgmXTgC_RdFUmc1jO-PNEXcj9RYX0A1aFst5LVL4nwLXNjcRcsqS6YMmHF_AVDev4EcJrb7FBAzy9LkIpAKT0sDG1Hyidr2NlS1WpCGv6')] h-50 rounded-tl-md rounded-tr-md p-4"
+                class="object-cover bg-center bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuD_iY4xAuTFr5FvQhKZylBya4Q7hz2LNoirmTmG1vR1_6qvzsuz1j4aqRcbneTIQuGgA4qcV-H0hgR7QeXAP4uqRISsq3YrdWgq_EqyQVg_cA9ip23ajyY5llnu4GJgk_TkXsBjbfqMUh5C8EtV-kSc6KevddYcerqDNqNZgmXTgC_RdFUmc1jO-PNEXcj9RYX0A1aFst5LVL4nwLXNjcRcsqS6YMmHF_AVDev4EcJrb7FBAzy9LkIpAKT0sDG1Hyidr2NlS1WpCGv6')] h-40 md:h-48 lg:h-52 rounded-t-lg md:rounded-t-xl p-3 md:p-4"
               >
                 <div
-                  class="w-10 h-10 bg-white shadow-md rounded-md flex items-center justify-center"
+                  class="w-10 h-10 md:w-12 md:h-12 bg-white shadow-md rounded-md md:rounded-lg flex items-center justify-center"
                 >
-                  <i data-lucide="map" class="text-amber-500 h-5 w-5"></i>
+                  <i
+                    data-lucide="map"
+                    class="text-amber-500 w-5 h-5 md:w-6 md:h-6"
+                  ></i>
                 </div>
               </div>
-              <div class="flex flex-col px-4 py-8 gap-2">
-                <h4 class="font-bold">Consultória</h4>
-                <p class="text-sm text-gray-500">
-                  Roteiros nacionais e internacionais completos, personalizados
-                  para você não se preocupar com nada além de curtir.
+              <div
+                class="flex flex-col px-4 md:px-5 py-5 md:py-6 lg:py-8 gap-2"
+              >
+                <h4 class="font-bold text-base md:text-lg">Consultoria</h4>
+                <p class="text-sm md:text-base text-gray-500">
+                  Planejamento estratégico e orientação especializada para criar
+                  a viagem perfeita de acordo com seu perfil e orçamento.
                 </p>
               </div>
             </div>
@@ -328,32 +397,38 @@
         </div>
       </section>
 
-      <section class="py-16">
-        <div class="mx-auto w-6xl flex flex-col gap-8">
-          <div class="flex justify-between items-end">
+      <section class="py-12 md:py-16 lg:py-20 px-4 md:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl flex flex-col gap-6 md:gap-8 lg:gap-10">
+          <div
+            class="flex flex-col md:flex-row md:justify-between md:items-end gap-4 md:gap-6"
+          >
             <div class="flex flex-col gap-2 justify-center">
-              <span class="uppercase text-amber-500 font-semibold text-md"
+              <span
+                class="uppercase text-amber-500 font-semibold text-sm md:text-base"
                 >Inspire-se</span
               >
-              <h2 class="text-2xl font-bold uppercase">
+              <h2 class="text-xl md:text-2xl lg:text-3xl font-bold uppercase">
                 Destinos e Experiências Exclusivas
               </h2>
-              <p class="text-md w-xl text-gray-500">
+              <p class="text-sm md:text-base max-w-2xl text-gray-500">
                 Descubra lugares incríveis selecionados por nossos especialistas
                 para sua próxima jornada.
               </p>
             </div>
-            <a href="#" class="flex gap-2 justify-center items-center"
+            <a
+              href="#"
+              class="flex gap-2 justify-start md:justify-center items-center text-sm md:text-base font-medium text-amber-600 hover:text-amber-700 transition-colors whitespace-nowrap"
               >Ver todos os destinos
-              <i></i>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </a>
           </div>
 
           <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[350px]"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 auto-rows-[300px] md:auto-rows-[350px]"
           >
+            <!-- Paris - Destaque Principal -->
             <div
-              class="group relative rounded-3xl overflow-hidden shadow-lg lg:row-span-2 cursor-pointer"
+              class="group relative rounded-2xl md:rounded-3xl overflow-hidden shadow-lg lg:row-span-2 cursor-pointer"
             >
               <img
                 alt="Paris"
@@ -361,36 +436,39 @@
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoFReN6-m_Yzz-s6S2ckhhnhHJpWgudwlevJ1NJguWIA7EedokufAFyVNuT6NEDqHj0VzBeZ0VJOFsIyAJpOtyB9sCDU9iR06EHk7G1l4HdlyGdQBUYWkVKPBR8WgJsaMbvk4Q8VWH4BM-i_T3P_AAgYDvu-6tICbUI5MdJJCfUoznI_T86vCjWfyWUPbxf5SbE5ilGWPzBDFX-y-UZd4My-Jeb163i0wRLW-L3GRMDRJs62fZypkL8O0l63hkQM86-6VSFK4uJ6qV"
               />
               <div
-                class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"
+                class="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-transparent"
               ></div>
               <div
-                class="absolute bottom-0 inset-x-0 p-8 flex flex-col items-start justify-end h-full"
+                class="absolute bottom-0 inset-x-0 p-5 md:p-6 lg:p-8 flex flex-col items-start justify-end h-full"
               >
                 <span
-                  class="inline-block px-3 py-1 mb-3 text-xs font-bold text-white bg-primary/90 rounded-full backdrop-blur-sm shadow-md"
+                  class="inline-block px-2.5 py-1 md:px-3 mb-2 md:mb-3 text-xs font-bold text-white bg-amber-500/90 rounded-full backdrop-blur-sm shadow-md"
                   >EUROPA</span
                 >
-                <h3 class="text-3xl font-bold text-white mb-2 leading-tight">
+                <h3
+                  class="text-2xl md:text-3xl font-bold text-white mb-1.5 md:mb-2 leading-tight"
+                >
                   Paris, França
                 </h3>
                 <p
-                  class="text-slate-200 text-sm mb-6 line-clamp-3 opacity-90 leading-relaxed"
+                  class="text-slate-200 text-xs md:text-sm mb-4 md:mb-6 line-clamp-2 md:line-clamp-3 opacity-90 leading-relaxed"
                 >
                   A cidade luz espera por você com romance, gastronomia refinada
                   e arte em cada esquina. Viva o charme parisiense em um roteiro
                   feito sob medida.
                 </p>
                 <button
-                  class="flex items-center gap-2 text-white font-bold border-b-2 border-primary pb-1 hover:text-primary transition-colors"
+                  class="flex items-center gap-2 text-white text-sm md:text-base font-bold border-b-2 border-amber-500 pb-1 hover:text-amber-500 transition-colors"
                 >
                   Quero saber mais
-
-                  <i data-lucide="arrow-up-right" class="text-sm"></i>
+                  <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
                 </button>
               </div>
             </div>
+
+            <!-- Maldivas - Destaque Horizontal -->
             <div
-              class="group relative rounded-3xl overflow-hidden shadow-lg lg:col-span-2 cursor-pointer"
+              class="group relative rounded-2xl md:rounded-3xl overflow-hidden shadow-lg md:col-span-1 lg:col-span-2 cursor-pointer"
             >
               <img
                 alt="Maldivas"
@@ -398,33 +476,39 @@
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvxCZIJ8OG-9sP8DfHIU7LOK5RE0rFG4oJcLN64uyDB_bQBcdk-BXdbgqev7ZDtfX5-uqVnmdKNVg_Fcs6eQAi_haIczu_UvaoxQ3bH37IfzQBXPepP7QiS0UY7PmHGrB4xpf8QslKSEUomBpl6PwS9n_H6YEVgA2H62KNPjY7x6XDYsonw4D73Bv4q-EOOFhC3zsfp938vcSyWPLTdqmBDROBBhg2ofV75-3Numu5hdePnVxjFCfs8jlEoz5BoVzHtSY-_XiKfA2K"
               />
               <div
-                class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"
+                class="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent"
               ></div>
               <div
-                class="absolute bottom-0 inset-x-0 p-8 flex flex-col items-start justify-end h-full"
+                class="absolute bottom-0 inset-x-0 p-5 md:p-6 lg:p-8 flex flex-col items-start justify-end h-full"
               >
                 <span
-                  class="inline-block px-3 py-1 mb-3 text-xs font-bold text-white bg-primary/90 rounded-full backdrop-blur-sm shadow-md"
+                  class="inline-block px-2.5 py-1 md:px-3 mb-2 md:mb-3 text-xs font-bold text-white bg-amber-500/90 rounded-full backdrop-blur-sm shadow-md"
                   >ÁSIA</span
                 >
-                <h3 class="text-3xl font-bold text-white mb-2">Maldivas</h3>
+                <h3
+                  class="text-2xl md:text-3xl font-bold text-white mb-1.5 md:mb-2"
+                >
+                  Maldivas
+                </h3>
                 <p
-                  class="text-slate-200 text-sm mb-6 max-w-lg opacity-90 leading-relaxed"
+                  class="text-slate-200 text-xs md:text-sm mb-4 md:mb-6 max-w-lg opacity-90 leading-relaxed line-clamp-2 md:line-clamp-none"
                 >
                   O paraíso na terra. Relaxe em bangalôs luxuosos sobre águas
                   cristalinas e desfrute de um refúgio de paz incomparável e
                   intimista.
                 </p>
                 <button
-                  class="flex items-center gap-2 text-white font-bold border-b-2 border-primary pb-1 hover:text-primary transition-colors"
+                  class="flex items-center gap-2 text-white text-sm md:text-base font-bold border-b-2 border-amber-500 pb-1 hover:text-amber-500 transition-colors"
                 >
                   Quero saber mais
-                  <i data-lucide="arrow-up-right" class="text-sm"></i>
+                  <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
                 </button>
               </div>
             </div>
+
+            <!-- Tóquio -->
             <div
-              class="group relative rounded-3xl overflow-hidden shadow-lg cursor-pointer"
+              class="group relative rounded-2xl md:rounded-3xl overflow-hidden shadow-lg cursor-pointer"
             >
               <img
                 alt="Tóquio"
@@ -432,34 +516,38 @@
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLnaPHntWGnrR1U-YxIEluPEtSSMyuVmbNURsbttCr1oD3vKBtfEH2C-ENg4g0a_wpqC8Ht90EQ3rdkqJ5qlJS16NxRSRir9Lk4YwjQAVK581JA7G6aWjiMLFaPaps-FBjAK30jCvKvnZhaIcGP2H0nubrF5UqPLFiC4cv_wNW8oroc7oDvhdLw3edFFixYMYX2Sgmu0nCoeL-nEVqF7kluHEzZvaTcKgzeoXuqynb1tYPH0f42JemDE9lYhutIyBHu6JkZjDopmLF"
               />
               <div
-                class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"
+                class="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent"
               ></div>
               <div
-                class="absolute bottom-0 inset-x-0 p-6 flex flex-col items-start justify-end h-full"
+                class="absolute bottom-0 inset-x-0 p-4 md:p-5 lg:p-6 flex flex-col items-start justify-end h-full"
               >
                 <span
-                  class="inline-block px-3 py-1 mb-2 text-xs font-bold text-white bg-primary/90 rounded-full backdrop-blur-sm shadow-md"
+                  class="inline-block px-2.5 py-1 md:px-3 mb-2 text-xs font-bold text-white bg-amber-500/90 rounded-full backdrop-blur-sm shadow-md"
                   >ÁSIA</span
                 >
-                <h3 class="text-2xl font-bold text-white mb-2">
+                <h3
+                  class="text-xl md:text-2xl font-bold text-white mb-1.5 md:mb-2"
+                >
                   Tóquio, Japão
                 </h3>
                 <p
-                  class="text-slate-200 text-sm mb-4 line-clamp-2 opacity-90 leading-relaxed"
+                  class="text-slate-200 text-xs md:text-sm mb-3 md:mb-4 line-clamp-2 opacity-90 leading-relaxed"
                 >
                   Tradição milenar e tecnologia futurista se encontram nesta
                   metrópole vibrante.
                 </p>
                 <button
-                  class="flex items-center gap-2 text-white font-bold text-sm hover:text-primary transition-colors"
+                  class="flex items-center gap-2 text-white font-bold text-xs md:text-sm hover:text-amber-500 transition-colors"
                 >
                   Quero saber mais
-                  <i data-lucide="arrow-up-right" class="text-sm"></i>
+                  <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
                 </button>
               </div>
             </div>
+
+            <!-- Rio de Janeiro -->
             <div
-              class="group relative rounded-3xl overflow-hidden shadow-lg cursor-pointer"
+              class="group relative rounded-2xl md:rounded-3xl overflow-hidden shadow-lg cursor-pointer"
             >
               <img
                 alt="Rio de Janeiro"
@@ -467,34 +555,38 @@
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsFCHz48rN2SVKsTJgwds9EDWwaxDqYdHoq2KBIOINTs9GtG_BFeDDSf5pNkxxzLgAL-6rDIvUkkLM5v8FNMJLN8c0jIJCJIC_o8tJiAOBj1NMTBVNP91NPOe8uxxncGcVe61Rq9tRZ84q66ZqwoiZKpsbQXgUJpG0aiEY6wRFCSw4jgV_YZFP2VBRxSKlA43hsSTUO_5zAieirqtTL99SmZu5B0uC38F4eeDKonjh4JA3gexc3-M30QfupGLS5VGFNBo30N0QUYrL"
               />
               <div
-                class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"
+                class="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent"
               ></div>
               <div
-                class="absolute bottom-0 inset-x-0 p-6 flex flex-col items-start justify-end h-full"
+                class="absolute bottom-0 inset-x-0 p-4 md:p-5 lg:p-6 flex flex-col items-start justify-end h-full"
               >
                 <span
-                  class="inline-block px-3 py-1 mb-2 text-xs font-bold text-white bg-primary/90 rounded-full backdrop-blur-sm shadow-md"
+                  class="inline-block px-2.5 py-1 md:px-3 mb-2 text-xs font-bold text-white bg-amber-500/90 rounded-full backdrop-blur-sm shadow-md"
                   >BRASIL</span
                 >
-                <h3 class="text-2xl font-bold text-white mb-2">
+                <h3
+                  class="text-xl md:text-2xl font-bold text-white mb-1.5 md:mb-2"
+                >
                   Rio de Janeiro
                 </h3>
                 <p
-                  class="text-slate-200 text-sm mb-4 line-clamp-2 opacity-90 leading-relaxed"
+                  class="text-slate-200 text-xs md:text-sm mb-3 md:mb-4 line-clamp-2 opacity-90 leading-relaxed"
                 >
                   Belezas naturais deslumbrantes e a energia contagiante do povo
                   brasileiro.
                 </p>
                 <button
-                  class="flex items-center gap-2 text-white font-bold text-sm hover:text-primary transition-colors"
+                  class="flex items-center gap-2 text-white font-bold text-xs md:text-sm hover:text-amber-500 transition-colors"
                 >
                   Quero saber mais
-                  <i data-lucide="arrow-up-right" class="text-sm"></i>
+                  <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
                 </button>
               </div>
             </div>
+
+            <!-- Santorini -->
             <div
-              class="group relative rounded-3xl overflow-hidden shadow-lg cursor-pointer"
+              class="group relative rounded-2xl md:rounded-3xl overflow-hidden shadow-lg cursor-pointer"
             >
               <img
                 alt="Santorini"
@@ -502,34 +594,38 @@
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEwBRobzqKnnnTeZhxa1UIZWJyGA2SdpnWzvHXOkzzAplGgoMUb513Y0il7fd1zEDq7UGV3wx_urbI-WXlIrN-Yd3Itd_IVtzKfWxEZHHxpRqN5wdPodujJ7e6gjbIAhbtiKL2c3OFfzrXe3DMMVZGaFwOJ2Do18-lwL4sL2e4GKXtmJcU_ez_uEO_OUNsOzgn5pV5L58nTMbgpZ5wzr1Bl66H3QWkTRYO0okvfcsTNbnwrR9zFwwhRJ0Ppu4ycGQ2xJSUZ58uNa3R"
               />
               <div
-                class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"
+                class="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent"
               ></div>
               <div
-                class="absolute bottom-0 inset-x-0 p-6 flex flex-col items-start justify-end h-full"
+                class="absolute bottom-0 inset-x-0 p-4 md:p-5 lg:p-6 flex flex-col items-start justify-end h-full"
               >
                 <span
-                  class="inline-block px-3 py-1 mb-2 text-xs font-bold text-white bg-primary/90 rounded-full backdrop-blur-sm shadow-md"
+                  class="inline-block px-2.5 py-1 md:px-3 mb-2 text-xs font-bold text-white bg-amber-500/90 rounded-full backdrop-blur-sm shadow-md"
                   >EUROPA</span
                 >
-                <h3 class="text-2xl font-bold text-white mb-2">
+                <h3
+                  class="text-xl md:text-2xl font-bold text-white mb-1.5 md:mb-2"
+                >
                   Santorini, Grécia
                 </h3>
                 <p
-                  class="text-slate-200 text-sm mb-4 line-clamp-2 opacity-90 leading-relaxed"
+                  class="text-slate-200 text-xs md:text-sm mb-3 md:mb-4 line-clamp-2 opacity-90 leading-relaxed"
                 >
                   Pôr do sol inesquecível e arquitetura branca icônica sobre o
                   mar Egeu.
                 </p>
                 <button
-                  class="flex items-center gap-2 text-white font-bold text-sm hover:text-primary transition-colors"
+                  class="flex items-center gap-2 text-white font-bold text-xs md:text-sm hover:text-amber-500 transition-colors"
                 >
                   Quero saber mais
-                  <i data-lucide="arrow-up-right" class="text-sm"></i>
+                  <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
                 </button>
               </div>
             </div>
+
+            <!-- Orlando - Destaque Horizontal -->
             <div
-              class="group relative rounded-3xl overflow-hidden shadow-lg lg:col-span-2 cursor-pointer"
+              class="group relative rounded-2xl md:rounded-3xl overflow-hidden shadow-lg md:col-span-1 lg:col-span-2 cursor-pointer"
             >
               <img
                 alt="Orlando"
@@ -537,30 +633,31 @@
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGRV8Eln98AcjYXgT8Hlc5gtTkq9_HeeNYm7eSYn37FQ09tkpvKZvgHVPig3THtjrFsE69lMNxU_Qp-QP5_zF_5KAzzyPFo5MmGZB4iZs5Q7Nv2c9zZ2AELkKcv5mTl5Q1s10fSyoEcYOU9yviP_-It54MJuyjQmo6yAyDEZijq3Gi1E7s5GCqfpeN4fXKVvASj4ocV0_Oi67imcNtOpGisqQjKeyOtFY3pR5poRv8numFbAzg2QTVXRoAiaTMJnSBbYJKmIJTtBTx"
               />
               <div
-                class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"
+                class="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent"
               ></div>
               <div
-                class="absolute bottom-0 inset-x-0 p-8 flex flex-col items-start justify-end h-full"
+                class="absolute bottom-0 inset-x-0 p-5 md:p-6 lg:p-8 flex flex-col items-start justify-end h-full"
               >
                 <span
-                  class="inline-block px-3 py-1 mb-3 text-xs font-bold text-white bg-primary/90 rounded-full backdrop-blur-sm shadow-md"
+                  class="inline-block px-2.5 py-1 md:px-3 mb-2 md:mb-3 text-xs font-bold text-white bg-amber-500/90 rounded-full backdrop-blur-sm shadow-md"
                   >AMÉRICA DO NORTE</span
                 >
-                <h3 class="text-3xl font-bold text-white mb-2">
+                <h3
+                  class="text-2xl md:text-3xl font-bold text-white mb-1.5 md:mb-2"
+                >
                   Orlando - Disney
                 </h3>
                 <p
-                  class="text-slate-200 text-sm mb-6 max-w-lg opacity-90 leading-relaxed"
+                  class="text-slate-200 text-xs md:text-sm mb-4 md:mb-6 max-w-lg opacity-90 leading-relaxed line-clamp-2 md:line-clamp-none"
                 >
                   Onde os sonhos se tornam realidade. Viva a magia e diversão
                   nos parques mais famosos do mundo com todo o conforto.
                 </p>
                 <button
-                  class="flex items-center gap-2 text-white font-bold border-b-2 border-primary pb-1 hover:text-primary transition-colors"
+                  class="flex items-center gap-2 text-white text-sm md:text-base font-bold border-b-2 border-amber-500 pb-1 hover:text-amber-500 transition-colors"
                 >
                   Quero saber mais
-
-                  <i data-lucide="arrow-up-right" class="text-sm"></i>
+                  <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
                 </button>
               </div>
             </div>
@@ -568,69 +665,97 @@
         </div>
       </section>
 
-      <section class="py-16 bg-blue-500/10">
-        <div class="mx-auto w-6xl flex flex-col gap-8">
+      <section
+        class="py-12 md:py-16 lg:py-20 bg-blue-500/10 px-4 md:px-6 lg:px-8"
+      >
+        <div class="mx-auto max-w-7xl flex flex-col gap-6 md:gap-8 lg:gap-10">
           <div
-            class="flex flex-col gap-3 justify-center items-center text-center"
+            class="flex flex-col gap-2 md:gap-3 justify-center items-center text-center"
           >
-            <span class="uppercase text-blue-500 font-semibold text-md"
+            <span
+              class="uppercase text-blue-500 font-semibold text-sm md:text-base"
               >Somos a solução</span
             >
-            <h2 class="text-2xl font-bold uppercase">
+            <h2 class="text-xl md:text-2xl lg:text-3xl font-bold uppercase">
               Por que viajar com Helaury Travel?
             </h2>
           </div>
 
-          <div class="grid grid-cols-4 gap-6 mt-8">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mt-4 md:mt-6 lg:mt-8"
+          >
+            <!-- Atendimento Humanizado -->
             <div
-              class="flex flex-col gap-2 items-center justify-center text-center"
+              class="flex flex-col gap-2 md:gap-3 items-center justify-center text-center p-4 md:p-6 rounded-lg hover:bg-white/50 transition-colors"
             >
               <div
-                class="w-10 h-10 bg-white rounded-md flex items-center justify-center"
+                class="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-white shadow-md rounded-lg md:rounded-xl flex items-center justify-center"
               >
-                <i data-lucide="laugh" class="text-blue-500 h-5 w-5"></i>
+                <i
+                  data-lucide="laugh"
+                  class="text-blue-500 w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
+                ></i>
               </div>
-              <h3 class="font-semibold">Atendimento Humanizado</h3>
-              <p class="text-sm text-gray-500">
+              <h3 class="font-semibold text-base md:text-lg">
+                Atendimento Humanizado
+              </h3>
+              <p class="text-sm md:text-base text-gray-600">
                 Suporte de pessoa para pessoa, do início ao fim.
               </p>
             </div>
+
+            <!-- Preço Justo -->
             <div
-              class="flex flex-col gap-2 items-center justify-center text-center"
+              class="flex flex-col gap-2 md:gap-3 items-center justify-center text-center p-4 md:p-6 rounded-lg hover:bg-white/50 transition-colors"
             >
               <div
-                class="w-10 h-10 bg-white rounded-md flex items-center justify-center"
+                class="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-white shadow-md rounded-lg md:rounded-xl flex items-center justify-center"
               >
-                <i data-lucide="turtle" class="text-blue-500 h-5 w-5"></i>
+                <i
+                  data-lucide="wallet"
+                  class="text-blue-500 w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
+                ></i>
               </div>
-              <h3 class="font-semibold">Preço Justo</h3>
-              <p class="text-sm text-gray-500">
-                Valores competitivos sem taxas escondidas
+              <h3 class="font-semibold text-base md:text-lg">Preço Justo</h3>
+              <p class="text-sm md:text-base text-gray-600">
+                Valores competitivos sem taxas escondidas.
               </p>
             </div>
+
+            <!-- Suporte 24h -->
             <div
-              class="flex flex-col gap-2 items-center justify-center text-center"
+              class="flex flex-col gap-2 md:gap-3 items-center justify-center text-center p-4 md:p-6 rounded-lg hover:bg-white/50 transition-colors"
             >
               <div
-                class="w-10 h-10 bg-white rounded-md flex items-center justify-center"
+                class="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-white shadow-md rounded-lg md:rounded-xl flex items-center justify-center"
               >
-                <i data-lucide="user-cog" class="text-blue-500 h-5 w-5"></i>
+                <i
+                  data-lucide="headset"
+                  class="text-blue-500 w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
+                ></i>
               </div>
-              <h3 class="font-semibold">Suporte 24h</h3>
-              <p class="text-sm text-gray-500">
+              <h3 class="font-semibold text-base md:text-lg">Suporte 24h</h3>
+              <p class="text-sm md:text-base text-gray-600">
                 Estamos com você em qualquer fuso horário.
               </p>
             </div>
+
+            <!-- Segurança Total -->
             <div
-              class="flex flex-col gap-2 items-center justify-center text-center"
+              class="flex flex-col gap-2 md:gap-3 items-center justify-center text-center p-4 md:p-6 rounded-lg hover:bg-white/50 transition-colors"
             >
               <div
-                class="w-10 h-10 bg-white rounded-md flex items-center justify-center"
+                class="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-white shadow-md rounded-lg md:rounded-xl flex items-center justify-center"
               >
-                <i data-lucide="shield" class="text-blue-500 h-5 w-5"></i>
+                <i
+                  data-lucide="shield-check"
+                  class="text-blue-500 w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
+                ></i>
               </div>
-              <h3 class="font-semibold">Segurança Total</h3>
-              <p class="text-sm text-gray-500">
+              <h3 class="font-semibold text-base md:text-lg">
+                Segurança Total
+              </h3>
+              <p class="text-sm md:text-base text-gray-600">
                 Empresa certificada e transparente nos seus serviços.
               </p>
             </div>
@@ -638,325 +763,476 @@
         </div>
       </section>
 
-      <section class="py-16">
-        <div class="mx-auto w-6xl flex flex-col gap-8">
-          <div class="flex flex-col gap-3 justify-center items-center">
-            <span class="uppercase text-amber-500 font-semibold text-md"
+      <section class="py-12 md:py-16 lg:py-20 px-4 md:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl flex flex-col gap-6 md:gap-8 lg:gap-10">
+          <div
+            class="flex flex-col gap-2 md:gap-3 justify-center items-center text-center"
+          >
+            <span
+              class="uppercase text-amber-500 font-semibold text-sm md:text-base"
               >Prova social</span
             >
-            <h2 class="text-2xl font-bold uppercase">Quem viajou, aprovou</h2>
+            <h2 class="text-xl md:text-2xl lg:text-3xl font-bold uppercase">
+              Quem viajou, aprovou
+            </h2>
           </div>
 
-          <div class="mt-8">
+          <div class="mt-4 md:mt-6 lg:mt-8">
             <div
-              class="overflow-hidden relative w-6xl mx-auto h-150 scroll-container"
+              class="overflow-hidden relative max-w-7xl mx-auto h-96 md:h-128 lg:h-152 scroll-container"
             >
               <div
-                class="grid grid-cols-3 gap-4 animate-scroll-up w-full top-0"
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 animate-scroll-up w-full"
               >
+                <!-- Depoimento 1 -->
                 <div
-                  class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm"
+                  class="bg-white p-5 md:p-6 lg:p-8 rounded-xl md:rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow"
                 >
-                  <div class="flex gap-1 text-yellow-400 mb-4">
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
+                  <div class="flex gap-1 text-yellow-400 mb-3 md:mb-4">
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
                   </div>
-                  <p class="text-sm font-medium italic mb-6">
+                  <p
+                    class="text-xs md:text-sm font-medium italic mb-4 md:mb-6 text-gray-700 leading-relaxed"
+                  >
                     "A viagem para a Disney foi perfeita! A equipe cuidou de
                     todos os agendamentos e nos deu dicas incríveis que fizeram
                     toda a diferença."
                   </p>
                   <div class="flex items-center gap-3">
                     <div
-                      class="size-10 rounded-full bg-slate-200 overflow-hidden"
+                      class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-slate-200 overflow-hidden shrink-0"
                     >
                       <img
-                        alt="Foto de perfil de cliente satisfeita"
+                        alt="Foto de perfil de Mariana Silva"
                         class="h-full w-full object-cover"
-                        data-alt="Portrait of a smiling woman"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVGFup9Xaxpt1uUl_n_SVPTIRMG48Dy47815bnDj-GzPo95TcdLaJ4u80C_2aGoe66_mfjAHwi5agQH5VymiDr7EKK-v_r1-T2ZKhcv6QQvq6-LLSSHgYLbbn18EzQNAfVKf8weHb921bc0Za6Jk863PEHNY30YSHwDTe2TuZVyf4ou0MRMTN9EdTSHQXZK6Px1JKk4kJ55QeZHl37XHyyh0qoQpqdPGLT4y4OCHhnx60eNgx7Un8VdxGxZLqpjd7-eqqY9Vw27m7b"
                       />
                     </div>
                     <div>
-                      <h5 class="font-bold text-sm">Mariana Silva</h5>
-                      <p class="text-xs text-[#4c809a] dark:text-slate-400">
-                        Orlando, 2023
-                      </p>
+                      <h5 class="font-bold text-xs md:text-sm">
+                        Mariana Silva
+                      </h5>
+                      <p class="text-xs text-blue-600">Orlando, 2023</p>
                     </div>
                   </div>
                 </div>
+
+                <!-- Depoimento 2 -->
                 <div
-                  class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm"
+                  class="bg-white p-5 md:p-6 lg:p-8 rounded-xl md:rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow"
                 >
-                  <div class="flex gap-1 text-yellow-400 mb-4">
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
+                  <div class="flex gap-1 text-yellow-400 mb-3 md:mb-4">
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
                   </div>
-                  <p class="text-sm font-medium italic mb-6">
-                    "A viagem para a Disney foi perfeita! A equipe cuidou de
-                    todos os agendamentos e nos deu dicas incríveis que fizeram
-                    toda a diferença."
+                  <p
+                    class="text-xs md:text-sm font-medium italic mb-4 md:mb-6 text-gray-700 leading-relaxed"
+                  >
+                    "Lua de mel inesquecível nas Maldivas! Cada detalhe foi
+                    pensado com carinho e superou todas as expectativas."
                   </p>
                   <div class="flex items-center gap-3">
                     <div
-                      class="size-10 rounded-full bg-slate-200 overflow-hidden"
+                      class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-slate-200 overflow-hidden shrink-0"
                     >
                       <img
-                        alt="Foto de perfil de cliente satisfeita"
+                        alt="Foto de perfil de Carlos Mendes"
                         class="h-full w-full object-cover"
-                        data-alt="Portrait of a smiling woman"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVGFup9Xaxpt1uUl_n_SVPTIRMG48Dy47815bnDj-GzPo95TcdLaJ4u80C_2aGoe66_mfjAHwi5agQH5VymiDr7EKK-v_r1-T2ZKhcv6QQvq6-LLSSHgYLbbn18EzQNAfVKf8weHb921bc0Za6Jk863PEHNY30YSHwDTe2TuZVyf4ou0MRMTN9EdTSHQXZK6Px1JKk4kJ55QeZHl37XHyyh0qoQpqdPGLT4y4OCHhnx60eNgx7Un8VdxGxZLqpjd7-eqqY9Vw27m7b"
                       />
                     </div>
                     <div>
-                      <h5 class="font-bold text-sm">Mariana Silva</h5>
-                      <p class="text-xs text-[#4c809a] dark:text-slate-400">
-                        Orlando, 2023
-                      </p>
+                      <h5 class="font-bold text-xs md:text-sm">
+                        Carlos Mendes
+                      </h5>
+                      <p class="text-xs text-blue-600">Maldivas, 2024</p>
                     </div>
                   </div>
                 </div>
+
+                <!-- Depoimento 3 -->
                 <div
-                  class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm"
+                  class="bg-white p-5 md:p-6 lg:p-8 rounded-xl md:rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow"
                 >
-                  <div class="flex gap-1 text-yellow-400 mb-4">
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
+                  <div class="flex gap-1 text-yellow-400 mb-3 md:mb-4">
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
                   </div>
-                  <p class="text-sm font-medium italic mb-6">
-                    "A viagem para a Disney foi perfeita! A equipe cuidou de
-                    todos os agendamentos e nos deu dicas incríveis que fizeram
-                    toda a diferença."
+                  <p
+                    class="text-xs md:text-sm font-medium italic mb-4 md:mb-6 text-gray-700 leading-relaxed"
+                  >
+                    "Paris foi um sonho realizado! Roteiro perfeito, hotéis
+                    excelentes e suporte durante toda a viagem."
                   </p>
                   <div class="flex items-center gap-3">
                     <div
-                      class="size-10 rounded-full bg-slate-200 overflow-hidden"
+                      class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-slate-200 overflow-hidden shrink-0"
                     >
                       <img
-                        alt="Foto de perfil de cliente satisfeita"
+                        alt="Foto de perfil de Ana Paula"
                         class="h-full w-full object-cover"
-                        data-alt="Portrait of a smiling woman"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVGFup9Xaxpt1uUl_n_SVPTIRMG48Dy47815bnDj-GzPo95TcdLaJ4u80C_2aGoe66_mfjAHwi5agQH5VymiDr7EKK-v_r1-T2ZKhcv6QQvq6-LLSSHgYLbbn18EzQNAfVKf8weHb921bc0Za6Jk863PEHNY30YSHwDTe2TuZVyf4ou0MRMTN9EdTSHQXZK6Px1JKk4kJ55QeZHl37XHyyh0qoQpqdPGLT4y4OCHhnx60eNgx7Un8VdxGxZLqpjd7-eqqY9Vw27m7b"
                       />
                     </div>
                     <div>
-                      <h5 class="font-bold text-sm">Mariana Silva</h5>
-                      <p class="text-xs text-[#4c809a] dark:text-slate-400">
-                        Orlando, 2023
-                      </p>
+                      <h5 class="font-bold text-xs md:text-sm">Ana Paula</h5>
+                      <p class="text-xs text-blue-600">Paris, 2024</p>
                     </div>
                   </div>
                 </div>
+
+                <!-- Depoimento 4 -->
                 <div
-                  class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm"
+                  class="bg-white p-5 md:p-6 lg:p-8 rounded-xl md:rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow"
                 >
-                  <div class="flex gap-1 text-yellow-400 mb-4">
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
+                  <div class="flex gap-1 text-yellow-400 mb-3 md:mb-4">
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
                   </div>
-                  <p class="text-sm font-medium italic mb-6">
-                    "A viagem para a Disney foi perfeita! A equipe cuidou de
-                    todos os agendamentos e nos deu dicas incríveis que fizeram
-                    toda a diferença."
+                  <p
+                    class="text-xs md:text-sm font-medium italic mb-4 md:mb-6 text-gray-700 leading-relaxed"
+                  >
+                    "Experiência incrível no Japão! A equipe conhece muito bem
+                    os destinos e deu orientações valiosas."
                   </p>
                   <div class="flex items-center gap-3">
                     <div
-                      class="size-10 rounded-full bg-slate-200 overflow-hidden"
+                      class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-slate-200 overflow-hidden shrink-0"
                     >
                       <img
-                        alt="Foto de perfil de cliente satisfeita"
+                        alt="Foto de perfil de Roberto Lima"
                         class="h-full w-full object-cover"
-                        data-alt="Portrait of a smiling woman"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVGFup9Xaxpt1uUl_n_SVPTIRMG48Dy47815bnDj-GzPo95TcdLaJ4u80C_2aGoe66_mfjAHwi5agQH5VymiDr7EKK-v_r1-T2ZKhcv6QQvq6-LLSSHgYLbbn18EzQNAfVKf8weHb921bc0Za6Jk863PEHNY30YSHwDTe2TuZVyf4ou0MRMTN9EdTSHQXZK6Px1JKk4kJ55QeZHl37XHyyh0qoQpqdPGLT4y4OCHhnx60eNgx7Un8VdxGxZLqpjd7-eqqY9Vw27m7b"
                       />
                     </div>
                     <div>
-                      <h5 class="font-bold text-sm">Mariana Silva</h5>
-                      <p class="text-xs text-[#4c809a] dark:text-slate-400">
-                        Orlando, 2023
-                      </p>
+                      <h5 class="font-bold text-xs md:text-sm">Roberto Lima</h5>
+                      <p class="text-xs text-blue-600">Tóquio, 2023</p>
                     </div>
                   </div>
                 </div>
+
+                <!-- Depoimento 5 -->
                 <div
-                  class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm"
+                  class="bg-white p-5 md:p-6 lg:p-8 rounded-xl md:rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow"
                 >
-                  <div class="flex gap-1 text-yellow-400 mb-4">
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
+                  <div class="flex gap-1 text-yellow-400 mb-3 md:mb-4">
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
                   </div>
-                  <p class="text-sm font-medium italic mb-6">
-                    "A viagem para a Disney foi perfeita! A equipe cuidou de
-                    todos os agendamentos e nos deu dicas incríveis que fizeram
-                    toda a diferença."
+                  <p
+                    class="text-xs md:text-sm font-medium italic mb-4 md:mb-6 text-gray-700 leading-relaxed"
+                  >
+                    "Santorini superou todas as expectativas! Atendimento
+                    impecável e hotéis com vistas de tirar o fôlego."
                   </p>
                   <div class="flex items-center gap-3">
                     <div
-                      class="size-10 rounded-full bg-slate-200 overflow-hidden"
+                      class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-slate-200 overflow-hidden shrink-0"
                     >
                       <img
-                        alt="Foto de perfil de cliente satisfeita"
+                        alt="Foto de perfil de Juliana Costa"
                         class="h-full w-full object-cover"
-                        data-alt="Portrait of a smiling woman"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVGFup9Xaxpt1uUl_n_SVPTIRMG48Dy47815bnDj-GzPo95TcdLaJ4u80C_2aGoe66_mfjAHwi5agQH5VymiDr7EKK-v_r1-T2ZKhcv6QQvq6-LLSSHgYLbbn18EzQNAfVKf8weHb921bc0Za6Jk863PEHNY30YSHwDTe2TuZVyf4ou0MRMTN9EdTSHQXZK6Px1JKk4kJ55QeZHl37XHyyh0qoQpqdPGLT4y4OCHhnx60eNgx7Un8VdxGxZLqpjd7-eqqY9Vw27m7b"
                       />
                     </div>
                     <div>
-                      <h5 class="font-bold text-sm">Mariana Silva</h5>
-                      <p class="text-xs text-[#4c809a] dark:text-slate-400">
-                        Orlando, 2023
-                      </p>
+                      <h5 class="font-bold text-xs md:text-sm">
+                        Juliana Costa
+                      </h5>
+                      <p class="text-xs text-blue-600">Santorini, 2024</p>
                     </div>
                   </div>
                 </div>
+
+                <!-- Depoimento 6 -->
                 <div
-                  class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm"
+                  class="bg-white p-5 md:p-6 lg:p-8 rounded-xl md:rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow"
                 >
-                  <div class="flex gap-1 text-yellow-400 mb-4">
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
+                  <div class="flex gap-1 text-yellow-400 mb-3 md:mb-4">
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
                   </div>
-                  <p class="text-sm font-medium italic mb-6">
-                    "A viagem para a Disney foi perfeita! A equipe cuidou de
-                    todos os agendamentos e nos deu dicas incríveis que fizeram
-                    toda a diferença."
+                  <p
+                    class="text-xs md:text-sm font-medium italic mb-4 md:mb-6 text-gray-700 leading-relaxed"
+                  >
+                    "Viagem corporativa organizada com excelência. Tudo
+                    funcionou perfeitamente do início ao fim!"
                   </p>
                   <div class="flex items-center gap-3">
                     <div
-                      class="size-10 rounded-full bg-slate-200 overflow-hidden"
+                      class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-slate-200 overflow-hidden shrink-0"
                     >
                       <img
-                        alt="Foto de perfil de cliente satisfeita"
+                        alt="Foto de perfil de Fernando Santos"
                         class="h-full w-full object-cover"
-                        data-alt="Portrait of a smiling woman"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVGFup9Xaxpt1uUl_n_SVPTIRMG48Dy47815bnDj-GzPo95TcdLaJ4u80C_2aGoe66_mfjAHwi5agQH5VymiDr7EKK-v_r1-T2ZKhcv6QQvq6-LLSSHgYLbbn18EzQNAfVKf8weHb921bc0Za6Jk863PEHNY30YSHwDTe2TuZVyf4ou0MRMTN9EdTSHQXZK6Px1JKk4kJ55QeZHl37XHyyh0qoQpqdPGLT4y4OCHhnx60eNgx7Un8VdxGxZLqpjd7-eqqY9Vw27m7b"
                       />
                     </div>
                     <div>
-                      <h5 class="font-bold text-sm">Mariana Silva</h5>
-                      <p class="text-xs text-[#4c809a] dark:text-slate-400">
-                        Orlando, 2023
-                      </p>
+                      <h5 class="font-bold text-xs md:text-sm">
+                        Fernando Santos
+                      </h5>
+                      <p class="text-xs text-blue-600">Dubai, 2024</p>
                     </div>
                   </div>
                 </div>
+
+                <!-- Depoimentos repetidos para scroll infinito (7-9) -->
                 <div
-                  class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm"
+                  class="bg-white p-5 md:p-6 lg:p-8 rounded-xl md:rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow"
                 >
-                  <div class="flex gap-1 text-yellow-400 mb-4">
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
+                  <div class="flex gap-1 text-yellow-400 mb-3 md:mb-4">
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
                   </div>
-                  <p class="text-sm font-medium italic mb-6">
+                  <p
+                    class="text-xs md:text-sm font-medium italic mb-4 md:mb-6 text-gray-700 leading-relaxed"
+                  >
                     "A viagem para a Disney foi perfeita! A equipe cuidou de
                     todos os agendamentos e nos deu dicas incríveis que fizeram
                     toda a diferença."
                   </p>
                   <div class="flex items-center gap-3">
                     <div
-                      class="size-10 rounded-full bg-slate-200 overflow-hidden"
+                      class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-slate-200 overflow-hidden shrink-0"
                     >
                       <img
-                        alt="Foto de perfil de cliente satisfeita"
+                        alt="Foto de perfil de Mariana Silva"
                         class="h-full w-full object-cover"
-                        data-alt="Portrait of a smiling woman"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVGFup9Xaxpt1uUl_n_SVPTIRMG48Dy47815bnDj-GzPo95TcdLaJ4u80C_2aGoe66_mfjAHwi5agQH5VymiDr7EKK-v_r1-T2ZKhcv6QQvq6-LLSSHgYLbbn18EzQNAfVKf8weHb921bc0Za6Jk863PEHNY30YSHwDTe2TuZVyf4ou0MRMTN9EdTSHQXZK6Px1JKk4kJ55QeZHl37XHyyh0qoQpqdPGLT4y4OCHhnx60eNgx7Un8VdxGxZLqpjd7-eqqY9Vw27m7b"
                       />
                     </div>
                     <div>
-                      <h5 class="font-bold text-sm">Mariana Silva</h5>
-                      <p class="text-xs text-[#4c809a] dark:text-slate-400">
-                        Orlando, 2023
-                      </p>
+                      <h5 class="font-bold text-xs md:text-sm">
+                        Mariana Silva
+                      </h5>
+                      <p class="text-xs text-blue-600">Orlando, 2023</p>
                     </div>
                   </div>
                 </div>
+
                 <div
-                  class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm"
+                  class="bg-white p-5 md:p-6 lg:p-8 rounded-xl md:rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow"
                 >
-                  <div class="flex gap-1 text-yellow-400 mb-4">
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
+                  <div class="flex gap-1 text-yellow-400 mb-3 md:mb-4">
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
                   </div>
-                  <p class="text-sm font-medium italic mb-6">
-                    "A viagem para a Disney foi perfeita! A equipe cuidou de
-                    todos os agendamentos e nos deu dicas incríveis que fizeram
-                    toda a diferença."
+                  <p
+                    class="text-xs md:text-sm font-medium italic mb-4 md:mb-6 text-gray-700 leading-relaxed"
+                  >
+                    "Lua de mel inesquecível nas Maldivas! Cada detalhe foi
+                    pensado com carinho e superou todas as expectativas."
                   </p>
                   <div class="flex items-center gap-3">
                     <div
-                      class="size-10 rounded-full bg-slate-200 overflow-hidden"
+                      class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-slate-200 overflow-hidden shrink-0"
                     >
                       <img
-                        alt="Foto de perfil de cliente satisfeita"
+                        alt="Foto de perfil de Carlos Mendes"
                         class="h-full w-full object-cover"
-                        data-alt="Portrait of a smiling woman"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVGFup9Xaxpt1uUl_n_SVPTIRMG48Dy47815bnDj-GzPo95TcdLaJ4u80C_2aGoe66_mfjAHwi5agQH5VymiDr7EKK-v_r1-T2ZKhcv6QQvq6-LLSSHgYLbbn18EzQNAfVKf8weHb921bc0Za6Jk863PEHNY30YSHwDTe2TuZVyf4ou0MRMTN9EdTSHQXZK6Px1JKk4kJ55QeZHl37XHyyh0qoQpqdPGLT4y4OCHhnx60eNgx7Un8VdxGxZLqpjd7-eqqY9Vw27m7b"
                       />
                     </div>
                     <div>
-                      <h5 class="font-bold text-sm">Mariana Silva</h5>
-                      <p class="text-xs text-[#4c809a] dark:text-slate-400">
-                        Orlando, 2023
-                      </p>
+                      <h5 class="font-bold text-xs md:text-sm">
+                        Carlos Mendes
+                      </h5>
+                      <p class="text-xs text-blue-600">Maldivas, 2024</p>
                     </div>
                   </div>
                 </div>
+
                 <div
-                  class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm"
+                  class="bg-white p-5 md:p-6 lg:p-8 rounded-xl md:rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow"
                 >
-                  <div class="flex gap-1 text-yellow-400 mb-4">
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
-                    <i data-lucide="star" class="text-[20px]"></i>
+                  <div class="flex gap-1 text-yellow-400 mb-3 md:mb-4">
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
+                    <i
+                      data-lucide="star"
+                      class="w-4 h-4 md:w-5 md:h-5 fill-current"
+                    ></i>
                   </div>
-                  <p class="text-sm font-medium italic mb-6">
-                    "A viagem para a Disney foi perfeita! A equipe cuidou de
-                    todos os agendamentos e nos deu dicas incríveis que fizeram
-                    toda a diferença."
+                  <p
+                    class="text-xs md:text-sm font-medium italic mb-4 md:mb-6 text-gray-700 leading-relaxed"
+                  >
+                    "Paris foi um sonho realizado! Roteiro perfeito, hotéis
+                    excelentes e suporte durante toda a viagem."
                   </p>
                   <div class="flex items-center gap-3">
                     <div
-                      class="size-10 rounded-full bg-slate-200 overflow-hidden"
+                      class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-slate-200 overflow-hidden shrink-0"
                     >
                       <img
-                        alt="Foto de perfil de cliente satisfeita"
+                        alt="Foto de perfil de Ana Paula"
                         class="h-full w-full object-cover"
-                        data-alt="Portrait of a smiling woman"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVGFup9Xaxpt1uUl_n_SVPTIRMG48Dy47815bnDj-GzPo95TcdLaJ4u80C_2aGoe66_mfjAHwi5agQH5VymiDr7EKK-v_r1-T2ZKhcv6QQvq6-LLSSHgYLbbn18EzQNAfVKf8weHb921bc0Za6Jk863PEHNY30YSHwDTe2TuZVyf4ou0MRMTN9EdTSHQXZK6Px1JKk4kJ55QeZHl37XHyyh0qoQpqdPGLT4y4OCHhnx60eNgx7Un8VdxGxZLqpjd7-eqqY9Vw27m7b"
                       />
                     </div>
                     <div>
-                      <h5 class="font-bold text-sm">Mariana Silva</h5>
-                      <p class="text-xs text-[#4c809a] dark:text-slate-400">
-                        Orlando, 2023
-                      </p>
+                      <h5 class="font-bold text-xs md:text-sm">Ana Paula</h5>
+                      <p class="text-xs text-blue-600">Paris, 2024</p>
                     </div>
                   </div>
                 </div>
@@ -967,20 +1243,22 @@
       </section>
 
       <section class="py-16 bg-white">
-        <div class="mx-auto w-6xl">
+        <div class="mx-auto max-w-6xl px-4">
           <div class="bg-blue-500 rounded-2xl">
             <div
-              class="flex flex-col items-center justify-center text-center px-6 py-12 gap-6"
+              class="flex flex-col items-center justify-center text-center px-6 py-12 gap-4 md:gap-6 lg:gap-8"
             >
-              <span class="uppercase text-white font-semibold text-md"
-                >Pronto para embarcar?</span
+              <span
+                class="uppercase text-white font-semibold text-sm md:text-md lg:text-lg"
               >
-              <h2 class="text-3xl font-bold text-white">
+                Pronto para embarcar?
+              </span>
+              <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
                 Deixe-nos planejar sua próxima aventura!
               </h2>
               <a
-                href=""
-                class="mt-4 px-6 py-3 bg-white text-blue-500 font-bold rounded-full hover:bg-gray-100 transition"
+                href="#"
+                class="mt-4 px-6 py-3 bg-white text-blue-500 font-bold rounded-full hover:bg-gray-100 transition text-sm md:text-md"
               >
                 Contate-nos agora
               </a>
@@ -991,7 +1269,7 @@
     </main>
 
     <footer class="bg-[#101c22] text-slate-400 py-16 border-t border-slate-800">
-      <div class="max-w-[1280px] mx-auto px-4 sm:px-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-10">
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12"
         >
